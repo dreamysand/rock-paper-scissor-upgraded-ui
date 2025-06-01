@@ -11,7 +11,6 @@
   - 📄 Kertas
 - Desain UI lebih *charmful* dan modern
 - Komputer memilih secara acak
-- Animasi hasil (Menang, Kalah, Seri)
 - UI responsif untuk mobile & desktop
 
 ## 🛠️ Teknologi yang Digunakan
