@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pink-300 via-fuchsia-400 to-purple-500 flex items-center justify-center px-4">
+
+  <form id="rps" class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 w-full max-w-xl space-y-6">
+    <!-- Title -->
+    <h1 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-center text-gray-800 leading-snug">
+      Selamat Datang 👋 <br>
+      <span class="text-pink-600">di Web Batu Gunting Kertas</span>
+    </h1>
+
+    <!-- Tombol Pilihan -->
+    <div class="grid grid-cols-3 gap-4 sm:gap-6">
+      <!-- Tombol Batu -->
+      <button class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 rounded-xl transition text-lg sm:text-xl" name="operator" type="submit" value="batu">
+        ✊<br><span class="hidden sm:block">Batu</span>
+      </button>
+
+      <!-- Tombol Gunting -->
+      <button class="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 rounded-xl transition text-lg sm:text-xl" name="operator" type="submit" value="gunting">
+        ✂️<br><span class="hidden sm:block">Gunting</span>
+      </button>
+
+      <!-- Tombol Kertas -->
+      <button class="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-3 rounded-xl transition text-lg sm:text-xl" name="operator" type="submit" value="kertas">
+        📄<br><span class="hidden sm:block">Kertas</span>
+      </button>
+    </div>
+
+    <!-- Hasil -->
+    <div class="bg-gray-100 rounded-xl p-4 text-gray-700 space-y-2 shadow-inner text-sm sm:text-base">
+      <p><strong>User:</strong> <span id="userChoice">-</span></p>
+      <p><strong>Komputer:</strong> <span id="computerChoice">-</span></p>
+      <p><strong>Hasil:</strong> <span id="resultFinale" class="font-bold">-</span></p>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
